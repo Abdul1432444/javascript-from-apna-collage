@@ -83,9 +83,70 @@
 // }
 // console.log("congratulation you have enter the correct number");
 // string interpolation
-let product = {
-  item: "pen",
-  price: 10,
-};
-let output = `the cost of ${product.item} is ${product.price} Rupees`;
-console.log(output);
+// let product = {
+//   item: "pen",
+//   price: 10,
+// };
+// let output = `the cost of ${product.item} is ${product.price} Rupees`;
+// console.log(output);
+// some methods of string
+
+// let str = "Abdul Wahab";
+// str = str.toUpperCase();
+// console.log(str);
+
+// let newStr = "Abdul Wahab Khan";
+// newStr = newStr.toLowerCase();
+// console.log(newStr);
+
+// // remove spacing
+// let A = "     Abdul  Wahab    ";
+// A = A.trim();
+// console.log(A);
+// practice question
+
+// let fullName = prompt("Enter Your Name");
+// let userName = "@" + fullName + fullName.length;
+// console.log(userName);
+// now lets find class average
+
+// let marks = [50, 60, 66, 99, 46];
+
+// let sum = 0;
+
+// for (let val of marks) {
+//   sum += val;
+// }
+// let avg = sum / marks.length;
+// console.log(`Average marks of ${avg}`);
+// now print the values of itmes after 10% off
+
+// let items = [300, 500, 250, 400];
+
+// let i = 0;
+// for (let val of items) {
+//   let offer = val / 10;
+//   items[i] = items[i] - offer;
+
+//   console.log(`the value of item after offer is = ${items[i]}`);
+//   i++;
+// }
+// another way to print off values of items
+
+// let items = [300, 500, 250, 400];
+
+// for (let i = 0; i < items.length; i++) {
+//   let offer = items[i] / 10;
+//   items[i] -= offer;
+// }
+// console.log(items);
+
+// Now lets practice on Arrays
+
+// let compenies = ["Microsoft", "General Petrolium", "RMI", "AB Softwares"];
+// compenies.splice(2, 1, "AB");
+// console.log(compenies);
+// let compenies = ["Microsoft", "General Petrolium", "RMI", "AB Softwares"];
+// compenies.push("Software House");
+// console.log(compenies);
+// now we will start function from here
