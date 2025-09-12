@@ -150,3 +150,19 @@
 // compenies.push("Software House");
 // console.log(compenies);
 // now we will start function from here
+// function myfunction() {
+//   console.log("My Name is Abdul Wahab");
+//   console.log("I am learning JS from Apna Collage");
+// }
+// myfunction();
+// function sum(a, b) {
+//   sum1 = a + b;
+//   return sum1;
+// }
+// let val = sum(5, 6);
+// console.log(val);
+// arrow function
+const arowMul = (a, b) => {
+  console.log(a * b);
+};
+arowMul(2, 5);
