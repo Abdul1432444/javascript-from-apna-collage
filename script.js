@@ -162,7 +162,26 @@
 // let val = sum(5, 6);
 // console.log(val);
 // arrow function
-const arowMul = (a, b) => {
-  console.log(a * b);
-};
-arowMul(2, 5);
+// const arowMul = (a, b) => {
+//   console.log(a + b);
+// };
+// arowMul(2, 5);
+// now we will vowels in a word
+
+function countvowels(str) {
+  let count = 0;
+
+  for (const char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "o" ||
+      char === "i" ||
+      char === "u"
+    ) {
+      count++;
+    }
+  }
+
+  console.log(count);
+}
