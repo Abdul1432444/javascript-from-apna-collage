@@ -168,20 +168,104 @@
 // arowMul(2, 5);
 // now we will vowels in a word
 
-function countvowels(str) {
-  let count = 0;
+// function countvowels(str) {
+//   let count = 0;
 
-  for (const char of str) {
-    if (
-      char === "a" ||
-      char === "e" ||
-      char === "o" ||
-      char === "i" ||
-      char === "u"
-    ) {
-      count++;
-    }
-  }
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "o" ||
+//       char === "i" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
 
-  console.log(count);
-}
+//   console.log(count);
+// }
+// for each method
+// let arr = ["karachi", "peshawar", "multan"];
+
+// arr.forEach((val, idx) => {
+//   console.log(val, idx);
+// });
+// square of a Number using forEach
+// let arr = [55, 44, 63, 33];
+
+// arr.forEach((num) => {
+//   console.log(num * num);
+// });
+// map method of arrr and function
+// let arr = [55, 44, 63, 33];
+
+// let newval = arr.map((val) => {
+//   return val * 2;
+// });
+// console.log(newval);
+// filter method of arr and function
+// print even numbers
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let newArr = arr.filter((val) => {
+//   return val % 2 === 0;
+// });
+// console.log(newArr);
+// NOW REDUCE METHOD
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let output = arr.reduce((res, curr) => {
+//   return res + curr;
+// });
+// console.log(output);
+// how to print the largest number of array using reduce
+
+// let arr = [1, 2, 3, 4, 5, 66, 7, 8, 9, 10];
+
+// let output = arr.reduce((res, curr) => {
+//   return res > curr ? res : curr;
+// });
+// console.log(output);
+// now practice questions
+// let marks = [86, 40, 100, 101, 95, 90, 91];
+
+// let highMarks = marks.filter((val) => {
+//   return val > 90;
+// });
+
+// console.log(highMarks);
+// question no 2
+
+// let n = prompt("enter any number");
+// let arr = [];
+// for (let i = 1; i <= n; i++) {
+//   arr[i - 1] = i;
+// }
+// console.log(arr);
+// let sum = arr.reduce((res, curr) => {
+//   return res + curr;
+// });
+// console.log(sum);
+// let product = arr.reduce((res, curr) => {
+//   return res * curr;
+// });
+// console.log(product);
+// NOW WE HAVE STARTED DOM Document Object MODEL
+
+// DOM MANIPULATION
+// let element = document.getElementById("heading");
+// console.dir(element);
+// let element2 = document.getElementById("second-heading");
+// console.dir(element2);
+// let elements = document.getElementsByClassName("para");
+// console.dir(elements);
+// let elementsbytag = document.getElementsByTagName("p");
+// console.dir(elementsbytag);
+// let elementbyquerry = document.querySelector(".para");
+// console.log(elementbyquerry);
+// let elementbyquerry2 = document.querySelectorAll(".para");
+// console.log(elementbyquerry2);
+let h2 = document.querySelector("h2");
+console.dir(h2.innerText);
+h2.innerText = h2.innerText + "from Apna Collage";
