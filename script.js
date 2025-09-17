@@ -274,7 +274,6 @@ let divs = document.querySelectorAll(".box");
 
 let idx = 1;
 for (div of divs) {
-  div.innerHtml = `<h3>Hi i have change ${idx}the tag </h3>
-    `;
+  div.innerText = ` unique value${idx}`;
   idx++;
 }
