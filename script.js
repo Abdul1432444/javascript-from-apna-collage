@@ -266,14 +266,52 @@
 // console.log(elementbyquerry);
 // let elementbyquerry2 = document.querySelectorAll(".para");
 // console.log(elementbyquerry2);
-let h2 = document.querySelector("h2");
-console.dir(h2.innerText);
-h2.innerText = h2.innerText + "from Apna Collage";
+// let h2 = document.querySelector("h2");
+// console.dir(h2.innerText);
+// h2.innerText = h2.innerText + "from Apna Collage";
 
-let divs = document.querySelectorAll(".box");
+// let divs = document.querySelectorAll(".box");
 
-let idx = 1;
-for (div of divs) {
-  div.innerText = ` unique value${idx}`;
-  idx++;
-}
+// let idx = 1;
+// for (div of divs) {
+//   div.innerText = ` unique value${idx}`;
+//   idx++;
+// }
+// now we will access the attributes
+
+// let para = document.querySelector("p");
+// console.log(para.setAttribute("class", "Abdul"));
+// let para = document.querySelector("p");
+// para.style.backgroundColor = "purple";
+// para.style.fontSize = "50px";
+// para.style.display = "inline";
+// para.style.color = "white";
+// NOW WE WILL PRACTICE HOW TO INSERT NEW ELLEMNETS
+
+// let newHeading = document.createElement("h1");
+
+// newHeading.innerHTML = "<i><bold> Hi My Name Is Abdul Wahab</bold></i>";
+// document.querySelector("body").prepend(newHeading);
+
+// newHeading.remove();
+
+// document.querySelector("h2").append(newHeading);
+// newHeading.style.backgroundColor = "purple";
+// newHeading.style.display = "inline";
+// newHeading.style.color = "white";
+// newHeading.style.fontSize = "20px";
+// NOW PRACTICE QUESTION WILL TRY TO SOLVE MYSELF
+// let newBtn = document.createElement("button");
+// newBtn.innerHTML = "click me";
+// newBtn.style.backgroundColor = "red";
+// newBtn.style.color = "white";
+// newBtn.style.fontSize = "40px";
+// newBtn.style.borderRadius = "20px";
+// newBtn.style.cursor = "pointer";
+
+// document.querySelector("body").prepend(newBtn);
+
+// let para = document.querySelector("p");
+// para.classList.add("para1");
+
+// console.log(para);
