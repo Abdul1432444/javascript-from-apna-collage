@@ -315,3 +315,30 @@
 // para.classList.add("para1");
 
 // console.log(para);
+// let btn1 = document.querySelector("#btn1");
+
+// btn1.addEventListener("click", (evt) => {
+//   console.log("hello world");
+// });
+// btn1.addEventListener("click", (evt) => {
+//   console.log("hello world i am learning js");
+//   console.log(evt.type);
+//   console.log(evt.clientX, evt.clientY);
+// });
+let modeBtn = document.querySelector("#mode");
+
+let body = document.querySelector("body");
+let currMode = "light";
+
+modeBtn.addEventListener("click", () => {
+  if (currMode === "light") {
+    currMode = "dark";
+    body.classList.add("dark");
+    body.classList.remove("light");
+  } else {
+    currMode = "light";
+    body.classList.add("light");
+    body.classList.remove("dark");
+  }
+  console.log(currMode);
+});

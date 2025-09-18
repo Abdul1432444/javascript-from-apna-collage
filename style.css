@@ -1,16 +1,8 @@
-.box {
-  width: 90px;
-  height: 70px;
-  background-color: aqua;
-  margin: 10px;
-  text-align: center;
-  border: 2px solid black;
+.dark {
+  background-color: black;
+  color: white;
 }
-.content {
-  color: aquamarine;
-}
-.para1 {
-  background-color: rgb(215, 136, 136);
-  display: inline;
-  font-size: 40px;
+.light {
+  background-color: white;
+  color: black;
 }
