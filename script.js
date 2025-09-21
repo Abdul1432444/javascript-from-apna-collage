@@ -330,7 +330,7 @@ let modeBtn = document.querySelector("#mode");
 let body = document.querySelector("body");
 let currMode = "light";
 
-modeBtn.addEventListener("click", () => {
+modeBtn.addEventListener("mouseover", () => {
   if (currMode === "light") {
     currMode = "dark";
     body.classList.add("dark");
