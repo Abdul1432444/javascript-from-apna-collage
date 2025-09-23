@@ -325,20 +325,46 @@
 //   console.log(evt.type);
 //   console.log(evt.clientX, evt.clientY);
 // });
-let modeBtn = document.querySelector("#mode");
+// let modeBtn = document.querySelector("#mode");
 
-let body = document.querySelector("body");
-let currMode = "light";
+// let body = document.querySelector("body");
+// let currMode = "light";
 
-modeBtn.addEventListener("mouseover", () => {
-  if (currMode === "light") {
-    currMode = "dark";
-    body.classList.add("dark");
-    body.classList.remove("light");
-  } else {
-    currMode = "light";
-    body.classList.add("light");
-    body.classList.remove("dark");
+// modeBtn.addEventListener("mouseover", () => {
+//   if (currMode === "light") {
+//     currMode = "dark";
+//     body.classList.add("dark");
+//     body.classList.remove("light");
+//   } else {
+//     currMode = "light";
+//     body.classList.add("light");
+//     body.classList.remove("dark");
+//   }
+//   console.log(currMode);
+// });
+// we will practice classes and objects
+
+// let obj = {
+//   name: "abdul",
+//   age: 25,
+//   education: "masters",
+// };
+let Data = "secret Data";
+class user {
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
   }
-  console.log(currMode);
-});
+  viewData() {
+    console.log("data", Data);
+  }
+}
+class admin extends user {
+  constructor(name, email) {
+    super(name, email);
+  }
+}
+
+let student1 = new user("Abdul", "abdul@gmai.com");
+let student2 = new user("Shameer", "shah@gmai.com");
+let admin1 = new admin("admin", "admin@gmail.com");
