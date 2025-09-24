@@ -349,22 +349,81 @@
 //   age: 25,
 //   education: "masters",
 // };
-let Data = "secret Data";
-class user {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
-  }
-  viewData() {
-    console.log("data", Data);
-  }
-}
-class admin extends user {
-  constructor(name, email) {
-    super(name, email);
-  }
-}
+// let Data = "secret Data";
+// class user {
+//   constructor(name, email) {
+//     this.name = name;
+//     this.email = email;
+//   }
+//   viewData() {
+//     console.log("data", Data);
+//   }
+// }
+// class admin extends user {
+//   constructor(name, email) {
+//     super(name, email);
+//   }
+// }
 
-let student1 = new user("Abdul", "abdul@gmai.com");
-let student2 = new user("Shameer", "shah@gmai.com");
-let admin1 = new admin("admin", "admin@gmail.com");
+// let student1 = new user("Abdul", "abdul@gmai.com");
+// let student2 = new user("Shameer", "shah@gmai.com");
+// let admin1 = new admin("admin", "admin@gmail.com");
+// asynchronous code practice
+// console.log("Abdul Wahab");
+// console.log("Abdul Haseeb");
+// setTimeout(() => {
+//   console.log("hollo world this code have been executed in 4 sec");
+// }, 4000);
+// console.log("i am not waiting for the previous code");
+// console.log("Last one");
+// now we practtice async await
+
+// async function hello() {
+//   console.log("hello");
+// }
+// function api() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Weather Data");
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
+
+// async function getWeatherData() {
+//   await api();
+//   await api();
+//   await api();
+//   await api();
+// }
+// function wait(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
+
+// async function demo() {
+//   console.log("Start...");
+//   await wait(4000);
+//   console.log("Printed after 2 seconds");
+// }
+
+// demo();
+// function getUser() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => resolve({ id: 1, name: "Abdul Wahab" }), 2000);
+//   });
+// }
+
+// async function showUser() {
+//   console.log("Loading user...");
+//   let user = await getUser();
+//   console.log("User loaded:", user.name);
+// }
+
+// showUser();
+// async function getJoke() {
+//   let response = await fetch("https://api.chucknorris.io/jokes/random");
+//   let data = await response.json();
+//   console.log("Random Joke:", data.value);
+// }
+
+// getJoke();
