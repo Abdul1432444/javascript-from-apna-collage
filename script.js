@@ -420,10 +420,12 @@
 // }
 
 // showUser();
+// const getJokeBtn = document.querySelector("#btn");
+// const jokePara = document.querySelector(".jokepara");
 // async function getJoke() {
 //   let response = await fetch("https://api.chucknorris.io/jokes/random");
 //   let data = await response.json();
-//   console.log("Random Joke:", data.value);
+//   jokePara.innerText = data.value;
 // }
 
-// getJoke();
+// getJokeBtn.addEventListener("click", getJoke);
